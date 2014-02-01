@@ -3,7 +3,8 @@ class MealsController < ApplicationController
   # GET /meals
   # GET /index.rabl
   def index
-    @meals = Meal.all
+    @meals = Meal.where(created_at: (7.minutes.ago..Time.now))
+    # @meals = Meal.all
     # render json: @meals
   end
   

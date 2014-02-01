@@ -1,5 +1,6 @@
 class Meal
   include Mongoid::Document
+  include Mongoid::Timestamps::Created
   field :name, type: String
   field :type, type: String
   field :email, type: String
