@@ -1,4 +1,12 @@
 Mealr::Application.routes.draw do
+  
+  resources :meals do 
+    collection do 
+      get 'requested'
+      get 'offered'
+    end
+  end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
