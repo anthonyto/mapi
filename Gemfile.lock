@@ -68,9 +68,12 @@ GEM
       connection_pool (~> 1.2)
       optionable (~> 0.2.0)
     multi_json (1.8.4)
+    oj (2.5.4)
     optionable (0.2.0)
     origin (2.1.0)
     polyglot (0.3.3)
+    rabl (0.9.3)
+      activesupport (>= 2.3.14)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -129,6 +132,8 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mongoid!
+  oj
+  rabl
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
