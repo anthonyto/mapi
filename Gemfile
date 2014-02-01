@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'rabl'
 gem 'oj'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
