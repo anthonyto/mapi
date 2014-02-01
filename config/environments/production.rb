@@ -1,6 +1,8 @@
 Mealr::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.action_controller.permit_all_parameters = true
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 
