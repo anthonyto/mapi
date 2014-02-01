@@ -7,5 +7,6 @@ class Meal
   field :long, type: Float
   field :address, type: String
   field :description, type: String
+  field :plates, type: Integer
   
 end
