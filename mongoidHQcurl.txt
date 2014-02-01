@@ -1,0 +1,9 @@
+curl -X GET https://api.mongohq.com/databases/mealr_test/collections?_apikey=rzrzjzkb916je87wz6s4
+
+curl -X POST https://api.mongohq.com/databases/mealr_test/collections/meals/documents?_apikey=rzrzjzkb916je87wz6s4 \
+-H "Content-Type: application/json" \
+-d '{"document" : {"name":"test", "type":"offered", "email":"foo@bar.com", "lat":"100", "long":"200", "address":"123 foo st", "description":"Some good food yo"}, "safe" : true }'
+
+curl -X POST localhost:3000/meals \
+  -H "Content-Type: application/json" \
+  -d '{ "name":"test", "type":"requested", "email":"foo@bar.com", "lat":"100", "long":"200", "address":"123 foo st", "description":"Some good food yo"}'

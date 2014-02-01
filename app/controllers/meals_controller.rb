@@ -4,6 +4,7 @@ class MealsController < ApplicationController
   # GET /index.rabl
   def index
     @meals = Meal.all
+    render json: @meals
   end
   
   # GET /meals/1
@@ -42,7 +43,7 @@ class MealsController < ApplicationController
   private 
   
   def meal_params
-    params.require(:meal).permit(:name, :type, :email, :latlong, :address, :description)
+    params.require(:meal).permit(:name, :type, :email, :lat, :long, :address, :description)
   end
     
 end

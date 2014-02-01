@@ -3,7 +3,8 @@ class Meal
   field :name, type: String
   field :type, type: String
   field :email, type: String
-  field :latlong, type: Array
+  field :lat, type: Float
+  field :long, type: Float
   field :address, type: String
   field :description, type: String
   
