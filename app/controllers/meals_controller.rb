@@ -1,6 +1,4 @@
 class MealsController < ApplicationController
-  before_filter :set_headers
-
 
   # GET /meals
   # GET /index.rabl
